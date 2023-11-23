@@ -2,16 +2,19 @@
   "name": "tailwind",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://lcarrati.github.io/tailwind-lp",
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/styles.css --watch",
-    "prettier": "npx prettier --write **/*.html"
+    "prettier": "npx prettier --write **/*.html",
+    "ghdeploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.0",
     "prettier-plugin-tailwindcss": "^0.5.7"
   }
 }
