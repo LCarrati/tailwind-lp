@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+@layer utilities {
+    .section-min-height {
+        min-height: calc(100vh - 68px);
+    }
+
+    .toggle-btn {   
+        /* [&>div] -> seleciona uma div dentro de um elemento */
+        /* @apply serve para juntar várias propriedades dentro de uma só classe, muito útil quando for usar JS para adicionar classes, ao invés de adicionar mil classes com JS vc adiciona somente 1 que faz o @apply de todas as outras */
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+    }
+}
+/* End of Custom CSS */
